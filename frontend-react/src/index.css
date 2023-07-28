@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 22px;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-color: #202020;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-image: url('./resources/background.svg');
+    
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+.backbutton{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    content: '\f099';
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.backbutton:hover{
+    background: rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+}
+
+link{
+    text-decoration: none;
+}
+Link{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+.ocur-gradientbar {
+    background: rgb(76,188,219);
+    background: linear-gradient(90deg, rgba(76,188,219,1) 0%, rgba(215,67,223,1) 51%, rgba(251,255,0,1) 100%); 
+    width: 348px;
+    height: 5px;
+    top: -11px;
+    left: 0px;
+    position:relative;
+    border: 1px solid #1a1a1a;
+    box-shadow: inset 0px -1px 0px #15151591;
+}
+
+.ocorrencia{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 25px;
+    padding-top: 10px;
+    font-size: small;
+    text-align: center;
+    height: 120px;
+    width: 350px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+.gradientbar {
+    background: rgb(76,188,219);
+    background: linear-gradient(90deg, rgba(76,188,219,1) 0%, rgba(215,67,223,1) 51%, rgba(251,255,0,1) 100%); 
+    width: 418px;
+    height: 5px;
+    top: -22px;
+    left: -22px;
+    position:relative;
+    border: 1px solid #1a1a1a;
+    box-shadow: inset 0px -1px 0px #15151591;
+}
+
+.deletebutton{
+    position: fixed;
+    top: -15px;
+    left: 90%;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.deletebutton:hover{
+    background: linear-gradient(250deg, rgba(240, 155, 28, 0.5) 0%, rgba(243, 0, 0, 0.5) 50%, rgb(150, 39, 214, 0.5) 100%);
+    opacity: 0.3;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.deleteuser{
+
+}
+
+.deleteuser:hover{
+    background: linear-gradient(250deg, rgba(207, 7, 7, 0.5) 0%, rgba(243, 0, 0, 0.5) 50%, rgba(177, 55, 55, 0.5) 100%);
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.icon{
+    position: fixed;
+    right: 15%;
+    left: 15%;
+    top: 10%;
+    bottom: 10%;
+}
+
+.alterbutton{
+    position: fixed;
+    display: inline-block;
+    top: -15px;
+    left: 80%;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.alterbutton:hover{
+    background: linear-gradient(250deg, rgba(28, 240, 109, 0.5) 0%, rgba(37, 70, 214, 0.5) 30%, rgba(37, 70, 214, 0.5) 60%, rgba(39, 214, 83, 0.5) 100%);
+    opacity: 0.3;
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+.selectbox{
+    font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 10px;
+  background: #ffffff93;
+  border: none;
+  color: #2e2e2e;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 10px;
+  background: #ffffff93;
+  border: none;
+  color: #2e2e2e;
+  font-size: 14px;
+  margin-bottom: 15px;
+
+}
+
+label,
+button {
+  margin-top: 1rem;
+  border-radius: 10px;
+    color: #fff;
+}
+
+button {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  position: relative;
+  left: 25%;
+  font-weight: bold;
+  font-size: 16px;
+  width: 50%;
+  height: 30%;
+}
+
+.centeredbtn{
+    position: relative;
+    left: 0%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
